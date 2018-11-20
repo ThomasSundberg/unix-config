@@ -1,0 +1,12 @@
+alias gw=./gradlew
+alias gits="git status"
+alias zshconfig="vim ~/.zshrc"
+alias gradle-profiler="/Users/thomassundberg/projects/githubProjects/gradle-profiler/build/install/gradle-profiler/bin/gradle-profiler"
+alias kc='kubectl'
+
+# Minium aliases
+alias setupCluster="~/Projects/client_clearing/minium/mgmt/cluster_setup_all.sh"
+alias purgeCluster="~/Projects/client_clearing/minium/mgmt/cluster_purge_all.sh"
+alias loadRefData="~/Projects/client_clearing/minium/mgmt/load_reference_data.sh"
+alias setVpcInfra="eval \$(~/Projects/client_clearing/tools/aws-launcher/bin/get-vpc-env ~/Projects/aws-envs/eu-west-2/vpc-infra)"
+alias loginAws="eval \$(aws ecr get-login --no-include-email --region eu-west-2)"
