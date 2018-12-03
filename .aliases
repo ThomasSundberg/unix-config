@@ -1,9 +1,9 @@
 alias gw=./gradlew
 alias gits="git status"
 alias zshconfig="vim ~/.zshrc"
-alias gradle-profiler="/Users/thomassundberg/projects/githubProjects/gradle-profiler/build/install/gradle-profiler/bin/gradle-profiler"
 alias kc='kubectl'
 
+alias jmc="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/bin/jmc"
 # Minium aliases
 alias setupCluster="~/Projects/client_clearing/minium/mgmt/cluster_setup_all.sh"
 alias purgeCluster="~/Projects/client_clearing/minium/mgmt/cluster_purge_all.sh"

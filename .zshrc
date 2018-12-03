@@ -31,6 +31,9 @@ unsetopt share_history
 
 source $HOME/.aliases
 
+# run first time 
+# source $HOME/.vim/pack/install.sh
+
 # KEYBINDS
 bindkey '^[[Z' forward-word
 
