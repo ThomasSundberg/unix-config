@@ -51,6 +51,12 @@ package https://github.com/davidhalter/jedi-vim &
 wait
 ) &
 
+(
+set_group syntax
+package https://github.com/vim-syntastic/syntastic.git &
+wait
+) &
+
 #(
 #set_group colorschemes
 #package https://github.com/altercation/vim-colors-solarized.git &

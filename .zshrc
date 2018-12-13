@@ -28,6 +28,8 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 # Turn off terminal history sharing
 unsetopt share_history
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_DUPS
 
 source $HOME/.aliases
 
@@ -44,7 +46,6 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PATH=/Users/thomas.sundberg/Scripts:$PATH
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-export MINIUM_DEVELOPER_BUILD=1
 export MINIUM_PATH=/Users/thomas.sundberg/Projects/client_clearing
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!! 
