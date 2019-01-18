@@ -2,7 +2,7 @@ filetype plugin indent on
 syntax on
 set so=20
 "set cursorline
-hi CursorLine term=bold cterm=bold ctermbg=247
+hi CursorLine ctermbg=247
 nnoremap n nzz
 nnoremap N Nzz
 
