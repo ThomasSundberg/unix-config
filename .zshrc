@@ -23,6 +23,7 @@ plugins=(
   autojump,
   aws,
   kubectl
+  #vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -39,6 +40,10 @@ source $HOME/.aliases
 # KEYBINDS
 bindkey '^[[Z' forward-word
 
+bindkey -v
+export KEYTIMEOUT=1
+#bindkey "^[[A" history-incremental-search-backward 
+#bindkey "^[[B" history-incremental-search-forward 
 #
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -48,6 +53,15 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export MINIUM_PATH=/Users/thomas.sundberg/Projects/client_clearing
 
+# Restore fuzzy history arrows when using VI mode
+# start typing + [Up-Arrow] - fuzzy find history forward
+autoload -U up-line-or-beginning-search
+zle -N up-line-or-beginning-search
+bindkey "${terminfo[kcuu1]}" up-line-or-beginning-search
+# start typing + [Down-Arrow] - fuzzy find history backward
+autoload -U down-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!! 
 export SDKMAN_DIR="/Users/thomas.sundberg/.sdkman" 
 [[ -s "/Users/thomas.sundberg/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/thomas.sundberg/.sdkman/bin/sdkman-init.sh"
