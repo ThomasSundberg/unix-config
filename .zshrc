@@ -23,15 +23,16 @@ plugins=(
   autojump,
   aws,
   kubectl
-  #vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
 # Turn off terminal history sharing
 unsetopt share_history
-setopt HIST_EXPIRE_DUPS_FIRST
-setopt HIST_IGNORE_DUPS
-
+setopt HIST_IGNORE_DUPS          # Don't record an entry that was just recorded again.
+setopt HIST_IGNORE_ALL_DUPS      # Delete old recorded entry if new entry is a duplicate.
+setopt HIST_FIND_NO_DUPS         # Do not display a line previously found.
+setopt HIST_IGNORE_SPACE         # Don't record an entry starting with a space.
+setopt HIST_SAVE_NO_DUPS 	 # Don't write duplicate entries in the history file.
 source $HOME/.aliases
 
 # run first time 
@@ -63,6 +64,10 @@ autoload -U down-line-or-beginning-search
 zle -N down-line-or-beginning-search
 bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!! 
+#
+#
+#
+#
 export SDKMAN_DIR="/Users/thomas.sundberg/.sdkman" 
 [[ -s "/Users/thomas.sundberg/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/thomas.sundberg/.sdkman/bin/sdkman-init.sh"
 

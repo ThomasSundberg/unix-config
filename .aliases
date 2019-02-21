@@ -2,6 +2,7 @@ alias gw=./gradlew
 alias gits="git status"
 alias zshconfig="vim ~/.zshrc"
 alias kc='kubectl'
+alias grep='grep --color=auto'
 
 alias jmc="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/bin/jmc"
 # Minium aliases
