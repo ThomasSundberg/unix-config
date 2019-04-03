@@ -6,6 +6,8 @@ hi CursorLine ctermbg=247
 nnoremap n nzz
 nnoremap N Nzz
 
+set clipboard=unnamed
+
 let mapleader = ","
 set rtp+=/usr/local/opt/fzf
 

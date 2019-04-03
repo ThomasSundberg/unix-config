@@ -22,7 +22,9 @@ plugins=(
   docker,
   autojump,
   aws,
-  kubectl
+  kubectl,
+  zsh-syntax-highlighting,
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -45,9 +47,6 @@ bindkey -v
 export KEYTIMEOUT=1
 #bindkey "^[[A" history-incremental-search-backward 
 #bindkey "^[[B" history-incremental-search-forward 
-#
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export PATH=/Users/thomas.sundberg/Scripts:$PATH
 export LC_ALL=en_US.UTF-8
